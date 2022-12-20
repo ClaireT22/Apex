@@ -1,29 +1,24 @@
-public class Dinner {
-
-    public Integer numberOfJuice;
+public  class Dinner {
+    public integer numberOfJuice;
     public String mealName;
-    
+
     public Dinner(){
-        
-        numberOfJuice = 2;
+       numberOfJuice= 2;
         mealName = 'Pizza';
-    }
-    
-    public Dinner(String otherMeal, Integer newNumberOfJuice){
         
-        numberOfJuice = newNumberOfJuice;
-        mealName = otherMeal;
     }
-
-     public Dinner(String otherMeal, Integer newNumberOfJuice, Integer afterDinnerNumberOfJuice){
+     public Dinner(string otherMeal, Integer newNumberOfJuice){
+       numberOfJuice= newNumberOfJuice;
+        mealName = otherMeal;
         
-        numberOfJuice = newNumberOfJuice + afterDinnerNumberOfJuice;
-        mealName = otherMeal;
     }
-
-    
+     public Dinner(string otherMeal, Integer newNumberOfJuice, Integer afterDinnerNumberOfJuice){
+       numberOfJuice= newNumberOfJuice + afterDinnerNumberOfJuice ;
+        mealName = otherMeal;
+        
+    }
     public void DinnerMethod(){
-        
-        System.debug('I ate ' + mealName + ' and drunk ' + numberOfJuice + ' glass of juice');
+
+        System.debug('I ate '+ mealName + ' and drunk ' + numberOfJuice + ' glass of juice' );
     }
 }
