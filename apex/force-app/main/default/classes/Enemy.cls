@@ -1,6 +1,6 @@
-public class Enemy {
+public virtual class Enemy {
 
-    public void Talk(){
+    public virtual void Talk(){ // virtual keyword give opportunity to child class override
         
         System.debug('I am an enemy. You better run!');
     }
